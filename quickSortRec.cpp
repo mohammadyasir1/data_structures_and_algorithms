@@ -18,7 +18,7 @@ int partion(int arr[], int s, int e){
 	// sorting left and right part
 	int i=s, j=e;
 	while(i < pivotIndex && j > pivotIndex){
-		while(arr[i] < pivot){
+		while(arr[i] <= pivot){
 			i++;
 		}
 		while(arr[j] > pivot){
