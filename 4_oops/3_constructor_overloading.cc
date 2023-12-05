@@ -57,7 +57,7 @@ int main() {
 	cout<<"-----------------"<<endl;
 	iphone_5se.disp("iphone 5 se", false);
 	cout<<"-----------------"<<endl;
-	iphone_se.disp("iphone 5 se", 2022, true);
+	iphone_se.disp("iphone se", 2022, true);
 
 	return 0;
 }
