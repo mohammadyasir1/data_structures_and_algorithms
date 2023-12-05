@@ -7,9 +7,9 @@ class mobile {
 	int prince;
 
 	public:
-	void set_details(string m, int p) {
-		this->model = m;
-		this->prince = p;
+	void set_details(string model, int prince) {
+		this->model = model;
+		this->prince = prince;
 	}
 
 	void disp() {
