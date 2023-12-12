@@ -3,7 +3,7 @@ using namespace std;
 
 string convertString(string str) {
 		
-	int len = str.strize();
+	int len = str.size();
 
 	//by default loop terminate when they found null character '\0'
 	//so why we check null character
