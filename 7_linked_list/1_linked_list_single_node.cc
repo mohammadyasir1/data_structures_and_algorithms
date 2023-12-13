@@ -21,7 +21,6 @@ public:
 };
 
 int main() {
-	Node* n1 = new Node();
 	Node* n1 = new Node(19);
 	cout<<"[data = "<< n1->data <<", "<<"address = "<< n1->nextPtr <<"]"<<endl;
 	return 0;
