@@ -2,10 +2,11 @@
 using namespace std;
 
 class node{
-public:
+public://remember to declare 
 	int data;//data value
 	node* next;//pointer that store next data value
 
+	//constructor
 	node(int data){
 		this->data = data;//given value put in data
 
