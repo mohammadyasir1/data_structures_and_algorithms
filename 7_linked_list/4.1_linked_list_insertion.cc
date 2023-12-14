@@ -53,6 +53,8 @@ node* insertion(node* &head, int position, int data){
 	// to be inserted
 	temp->next = newNode; 
 
+	return head;
+
 }
 
 void print(node* head){
