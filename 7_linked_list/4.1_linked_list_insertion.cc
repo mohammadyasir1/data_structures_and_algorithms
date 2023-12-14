@@ -31,6 +31,10 @@ node* insertion(node* &head, int position, int data){
 	// temporary pointer to the head node
 	node* temp = head;
 
+
+	// this while loop is set head to before the given position
+	// mean intput position is 6
+	// then it set head to 5th position
 	while(pos < position){
 		pos++;
 		temp = temp->next;
