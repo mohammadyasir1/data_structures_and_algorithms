@@ -90,13 +90,22 @@ void print(node* &head){
 }
 
 int main(){
-	node* n1 = new node(1);
+	node* n1 = new node(0);
 	node* head = n1;
-	insertion(head, 2, 2);
-	insertion(head, 3, 3);
-	insertion(head, 4, 4);
-	insertion(head, 5, 5);
-	insertion(head, 6, 6);
+
+	int data, position, n;
+	cout<<"enter the length of the list: ";
+	cin>>n;
+	cout<<"enter position of data and data: ";
+	
+	for(int i=0; i<n; i++){
+		cin>>position>>data;
+		insertion(head, position, data);
+	}
+	// insertion(head, 3, 3);
+	// insertion(head, 4, 4);
+	// insertion(head, 5, 5);
+	// insertion(head, 6, 6);
 	print(head);
 	cout<<"length = "<<len(head)<<endl;
 	findMiddle(head);
