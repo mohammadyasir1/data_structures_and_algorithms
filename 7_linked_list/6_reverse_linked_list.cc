@@ -55,6 +55,9 @@ node* reverseLinkedList(node* &head){
 		prev = curr;
 		curr = forward;
 	}
+
+	// if you are running code in local machine then remember to write this line
+	// don't directly return prev
 	head = prev;
 
 	return head;
