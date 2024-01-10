@@ -21,11 +21,7 @@ pair<int, int> search_in_sorted_matrix(vector<vector<int>> matrix, int r, int c,
 
 
 int main() {
-	vector<vector<int>> matrix = {{1,3,9,9,12},
-								  {14,17,19,23,27},
-								  {27,31,33,33,38},
-								  {40,41,44,56,58},
-								  {63,64,66,71,79}};
+	vector<vector<int>> matrix = {{1,3,9,9,12},{14,17,19,23,27},{27,31,33,33,38},{40,41,44,56,58},{63,64,66,71,79}};
 
     pair<int, int> ans = search_in_sorted_matrix(matrix, 5, 5, 31);
 
