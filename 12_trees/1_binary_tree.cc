@@ -25,27 +25,41 @@ public:
 
 
 binary_tree_node* build_tree(binary_tree_node* root) {
+	
 	int data;
-	cout<<"Enter the data: ";
 	cin>>data;
 	root = new binary_tree_node(data);
 
 	if(data == -1)
 		return NULL;
 
-	cout<<"Enter data for left node: ";
 	root->left = build_tree(root->left);
 
-	cout<<"Enter data for right node: ";
 	root->right = build_tree(root->right);
 
 	return root;
+}
+
+void display(binary_tree_node* root) {
+    if (root != NULL) {
+        cout<<root->data_value<<" ";
+        display(root->left);
+        display(root->right);
+    }
 }
 
 
 int main() {
 
 	binary_tree_node* root = NULL;
+
+	//creating tree
 	root = build_tree(root);
+	
+	// displaying tree
+	display(root);
+	cout<<endl;
+
+
 	return 0;
 }
