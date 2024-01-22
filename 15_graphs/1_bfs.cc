@@ -89,5 +89,6 @@ int main() {
 
     cout << "Following is Breadth First Traversal: ";
     g.BFS(1);
+    cout<<endl;
     return 0;
 }
