@@ -1,13 +1,11 @@
 #include <bits/stdc++.h>
 using namespace std;
- 
-// This class represents a directed graph using
-// adjacency list representation
+
 class Graph {
  
     // No. of vertices
     int V;
- 
+
     // Pointer to an array containing adjacency lists
     vector<list<int> > adj;
  
@@ -67,9 +65,7 @@ void Graph::BFS(int s)
     }
 }
  
-// Driver code
-int main()
-{
+int main() {
     // Create a graph given in the above diagram
     Graph g(18);
     g.addEdge(1, 2);
@@ -91,8 +87,7 @@ int main()
     g.addEdge(8, 7);
     g.addEdge(9, 6);
 
-    cout << "Following is Breadth First Traversal\n";
+    cout << "Following is Breadth First Traversal: ";
     g.BFS(1);
- 
     return 0;
 }
